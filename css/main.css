@@ -238,6 +238,14 @@ header .sub-menu li a:hover {
   background-size: cover;
 }
 
+.section--visual.pollution {
+  background-image: url('../img/bg_pollution.jpg');
+}
+
+.section--visual.store {
+  background-image: url('../img/bg_store.jpg');
+}
+
 .section--visual::before {
   content: '';
   position: absolute;
@@ -328,6 +336,10 @@ header .sub-menu li a:hover {
 .section--feature {
   background-color: #f5f5f5;
   padding-top: 66px;
+}
+
+.section--feature .inner {
+  margin-bottom: 30px;
 }
 
 .section--feature .summary {

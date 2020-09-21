@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-input[type=text],
-input[type=password] {
+.modal input {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -24,7 +23,8 @@ input[type=password] {
 }
 
 .container {
-    padding: 16px;
+    padding: 35px;
+    border-radius: 10px;
 }
 
 span.psw {
