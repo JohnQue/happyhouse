@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>GitHub</title>
+
+    <meta name="author" content="JOHNQUE" />
+    <meta name="description"
+        content="Github is where poeple build software. More than 31 million people use Github to discover, fork, and contribute to over 100 million projects." />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- http://ogp.me/ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GitHub" />
+    <meta property="og:title" content="Build software better, together" />
+    <meta property="og:description"
+        content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects." />
+    <meta property="og:image" content="img/logo__github.png" />
+    <meta property="og:url" content="https://github.com" />
+
+    <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="GitHub" />
+    <meta property="twitter:title" content="Build software better, together" />
+    <meta property="twitter:description"
+        content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects." />
+    <meta property="twitter:image" content="img/logo__github.png" />
+    <meta property="twitter:url" content="https://github.com" />
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+    <link rel="icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+
+    <script src="https://kit.fontawesome.com/bee4204144.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" media="(max-width: 1024px)" href="css/main_medium.css" />
+    <link rel="stylesheet" media="(max-width: 768px)" href="css/main_small.css" />
+
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <div class="body__container">
+        <!-- HEADER -->
+        <header class="section">
+            <div class="inner clearfix">
+                <div class="menu-group float--left">
+                    <img src="img/logo_happy_house.jpg" />
+                    <ul class="main-menu toggle">
+                        <li><a href="#">공지 사항</a></li>
+                        <li><a href="#">오늘의 뉴스</a></li>
+                    </ul>
+                </div>
+                <div class="sign-group float--right toggle">
+                    <div class="btn-group">
+                        <a class="btn sign-in">로그인</a>
+                        <a class="btn btn--primary sign-up">회원가입</a>
+                    </div>
+                    <form id="search-form" method="POST" action="">
+                        <input type="text" id="search" class="input--text" placeholder="검색하기" />
+                        <input type="submit" value="Submit" />
+                    </form>
+                </div>
+                <div id="toggle-btn">Header Menu Toggle Button</div>
+            </div>
+        </header>
+
+        <!-- VISUAL -->
+        <section class="section section--visual">
+            <div class="inner search">
+                <form id="sign-form" method="GET" action="search.html">
+                    <ul>
+                        <li>
+                            <!-- <input type="text" class="input--text" placeholder="Pick a username" /> -->
+                            <select>
+                                <option value="">도/광역시</option>
+                            </select>
+                        </li>
+                        <li>
+                            <!-- <input type="email" class="input--text" placeholder="Your email address" /> -->
+                            <select>
+                                <option value="">시/구/군</option>
+                            </select>
+                        </li>
+                        <li>
+                            <!-- <input type="password" class="input--text" placeholder="Create a password" /> -->
+                            <!-- <p class="caption"> -->
+                            <!-- Use at least one letter, one numeral, and seven characters.
+                </p> -->
+                            <select>
+                                <option value="">동</option>
+                            </select>
+                        </li>
+                        <li>
+                            <button type="submit" class="btn btn--primary">
+                                집 검색하기
+                            </button>
+                            <p class="caption">
+                                도/광역시 선택 후 시/구/군을 선택한 후에 나오는
+                                동을 맞춤선택하신 후 검색하기를 눌러주세요.
+                            </p>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </section>
+        <!-- FEATURE -->
+        <section class="section section--feature">
+            <div class="inner">
+                <div class="summary">
+                    <h2 class="summary__title">집 검색결과</h2>
+                    <p class="summary__description">
+                        원하는 조건에 맞추어 집을 검색했습니다.
+                    </p>
+                </div>
+                <div class="map-info">
+                    <div class="info">
+                        <h3>거래 정보</h3>
+                        <div class="separator"></div>
+                        <h4>
+                            <a href="detailSearch.html">
+                                e편한세상
+                            </a>
+                        </h4>
+                        <p>거래금액: 52,200만원</p>
+                        <p>84.965</p>
+                        <p>거래일: 2019.12.16</p>
+                    </div>
+                    <div id="map"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="section">
+            <div class="inner">
+                <div class="image">
+                    <img src="img/ssafy.png" alt="">
+                </div>
+                <div class="about">
+                    <h3>Find Us</h3>
+                    <div class="separator"></div>
+                    <p><i class="fas fa-map-marker-alt"></i> (SSAFY) 서울시 강남구 테헤란로 멀티스퀘어</p>
+                    <p><i class="fas fa-phone"></i> 1544-9001</p>
+                    <p><i class="far fa-envelope"></i>
+                        <a href="#">
+                            admin@ssafy.com
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function initMap() {
+            const myLatLng = {
+                lat: 37.782293,
+                lng: -122.39124
+            };
+            const map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatLng,
+                scrollwheel: false,
+                zoom: 18
+            });
+            const marker = new google.maps.Marker({
+                position: myLatLng,
+                map,
+                title: 'GitHub'
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap"
+        async defer></script>
+</body>
+
+</html>

@@ -46,6 +46,12 @@ a {
   background: #55a532 linear-gradient(#91dd70, #55ae2e);
 }
 
+.btn.btn--danger {
+  border: 1px solid red;
+  color: #fff;
+  background: crimson linear-gradient(#ee1616, #ec0e0e);
+}
+
 /* INPUT TEXT */
 .input--text {
   height: 34px;
@@ -247,6 +253,7 @@ header .sub-menu li a:hover {
   display: flex;
 }
 
+
 .section--visual .summary {
   flex-grow: 1;
   flex-basis: 0;
@@ -269,6 +276,7 @@ header .sub-menu li a:hover {
   height: 40px;
   border-radius: 5px;
 }
+
 
 #sign-form {
   width: 340px;
@@ -302,6 +310,18 @@ header .sub-menu li a:hover {
   padding: 0 25px;
   font-size: 20px;
   justify-content: center;
+}
+
+.section--visual .inner.search #sign-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section--visual .inner.search #sign-form,
+.section--visual .inner.search select ul,
+.section--visual .inner.search select ul li {
+  width: 100%;
 }
 
 /* FEATURE */
@@ -351,6 +371,15 @@ header .sub-menu li a:hover {
   grid-template-columns: repeat(4, 1fr); 
   */
   height: 100%;
+}
+
+.map-info {
+  display: flex;
+}
+
+.map-info .info {
+  margin-right: 20px;
+  width: 60%;
 }
 
 .section--feature .tiles li {
